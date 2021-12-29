@@ -5,7 +5,7 @@ source("RFunction.R")
 
 Sys.setenv(tz="UTC")
 
-inputFileName = "input.rds"
+inputFileName = "input2.rds"
 outputFileName = "output.rds"
 
 args <- list()
@@ -37,6 +37,7 @@ readInput <- function(sourceFile) {
     logger.debug("Loading file from %s", sourceFile)
     input <- tryCatch({
         # 1: try to read input as move RDS file
+      # browser()
         readRDS(file = sourceFile)
       },
       error = function(readRdsError) {
@@ -59,11 +60,12 @@ readInput <- function(sourceFile) {
 tryCatch(
 {
   inputData <- readInput(inputFileName)
+  # browser()
   # Add the data parameter if input data is available
   if (!is.null(inputData)) {
     args[["data"]] <- inputData
   }
-
+  # browser()
   result <- do.call(rFunction, args)
 
   if(!is.null(outputFileName) && outputFileName != "" && !is.null(result)) {
