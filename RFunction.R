@@ -9,7 +9,7 @@ rFunction = function(year, data) {
   # this line doesn't work with input.rds, can work with input2.rds
   data <- data[year(data@timestamps) == year]
   # browser()
-  pdf("hello_world.pdf")
+  pdf(file.path(Sys.getenv(x = "APP_ARTIFACTS_DIR", "."), "hello_world.pdf"))
   plot(data,main="Hello World!")
   dev.off()
   

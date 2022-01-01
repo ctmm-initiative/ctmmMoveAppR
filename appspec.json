@@ -1,0 +1,41 @@
+{
+  "settings": [],
+  "license": {
+    "key": "MIT"
+  },
+  "language": "eng",
+  "keywords": [
+    "outlier",
+    "ctmm"
+  ],
+  "people": [
+    {
+      "firstName": "Xianghui",
+      "middleInitials": null,
+      "lastName": "Dong",
+      "email": "xhdong@umd.edu",
+      "roles": [
+        "author",
+        "creator"
+      ],
+      "orcid": null,
+      "affiliation": "University of Maryland",
+      "affiliationRor": null
+    }
+  ],
+  "dependencies": {
+    "R": [
+      {
+        "name": "ctmm",
+        "version": "0.6.1"
+      },
+      {
+        "name": "data.table"
+      }
+    ]
+  },
+  "createsArtifacts": true,
+  "documentation": {
+    "url": "https://github.com/ctmm-initiative/ctmmMoveAppR#readme"
+  }
+}
