@@ -1,5 +1,13 @@
 {
-  "settings": [],
+  "settings": [
+      {
+        "id": "year",
+        "name": "year",
+        "description": "Select a year.",
+        "type": "INTEGER",
+        "defaultValue": null
+    }
+  ],
   "license": {
     "key": "MIT"
   },
