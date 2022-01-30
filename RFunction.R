@@ -13,7 +13,8 @@ rFunction = function(data) {
   # pdf(file.path(Sys.getenv(x = "APP_ARTIFACTS_DIR", "."), "hello_world.pdf"))
   # plot(data,main="Hello World!")
   # dev.off()
-  res <- outlie(data, plot = FALSE)
+  
+  res <- outlie(as.telemetry(data), plot = FALSE)
   
   return(res)
 }
