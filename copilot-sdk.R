@@ -5,7 +5,8 @@ source("RFunction.R")
 
 Sys.setenv(tz="UTC")
 
-inputFileName = "input2.rds"
+# inputFileName = "input2.rds"
+inputFileName = "buffalo.rds"
 outputFileName = "output.rds"
 
 args <- list()
@@ -21,7 +22,7 @@ args <- list()
 #    args[["password"]] = "any-password"
 
 # Add your arguments of your r function here
-args[["year"]] = 2014
+# args[["year"]] = 2014
 
 #################################################################
 #################################################################
