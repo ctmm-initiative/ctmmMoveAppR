@@ -5,8 +5,8 @@ source("RFunction.R")
 
 Sys.setenv(tz="UTC")
 
-# inputFileName = "input2.rds"
-inputFileName = "Kruger African Buffalo, GPS tracking, South Africa1.csv"
+inputFileName = "input_1.rds"
+# inputFileName = "Kruger African Buffalo, GPS tracking, South Africa1.csv"
 outputFileName = "output.rds"
 
 args <- list()
